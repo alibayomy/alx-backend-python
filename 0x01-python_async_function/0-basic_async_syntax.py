@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Contains a coroutine that delays a certain amount of time and returns it"""
+
 import random
 import asyncio
 
