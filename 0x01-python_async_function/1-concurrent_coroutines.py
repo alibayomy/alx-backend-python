@@ -8,7 +8,7 @@ from typing import List
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> List[float]:
+async def wait_n(n: int, max_delay: int) -> list[float]:
     """Calling wait_random n times
         with the specified max_delay
         return all the delayes appended to a list"""
@@ -19,4 +19,4 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
         random_delay = await wait_random(max_delay)
         all_delays.append(random_delay)
         counter += 1
-    return all_delays.sort()
+    return all_delays
